@@ -5,7 +5,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const { saveFlightData } = require('./db');
 
 // Configuración
-const PRICE_THRESHOLD = 500; // umbral de precio para alerta
+const PRICE_THRESHOLD = 150; // umbral de precio para alerta
 
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, { polling: false });
 const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
